@@ -1,15 +1,7 @@
 function firstWord(s) {
   // your code here
-	let str = s.trim();
-	let res = '';
-	for(let i=0; i<str.length; i++){
-		res += str.charAt(i);
-		if(str.charAt(i) === ' '){
-			break;
-		}
-		
-	}
-	return res;
+	let str = s.trim().split(' ');
+	return str[0];
 	
 }
 
